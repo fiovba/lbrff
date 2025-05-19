@@ -1,0 +1,675 @@
+{
+    "kitablar": [
+        {
+            "id": 1,
+            "name": "Anna Karenina",
+            "author": "Lev Tolstoy",
+            "img": "https://canonpress.com/cdn/shop/products/canon-classics-books-anna-karenina-worldview-edition-28066903949360.jpg?v=1616165914",
+            "price": 12.99,
+            "description": "Gənc zabitə aşiq olan, ərini və ailəsini atan gənc və gözəl bir qadının hekayəsi.",
+            "category": "Kitab",
+            "altCateg": [
+                "Bədii Ədəbiyyat"
+            ],
+            "altAltCateg": [
+                "Klassiklər",
+                "Macəra"
+            ],
+            "lang": [
+                "Az",
+                "Ru"
+            ],
+            "stockCount": 4,
+            "soldCount": 0,
+            "view": 0
+        },
+        {
+            "id": 2,
+            "name": "1984",
+            "author": "George Orwell",
+            "img": "https://www.libraff.az/images/thumbnails/400/600/from_1c/447ec35c-5053-11eb-a4d2-503eaa128442_1.jpg.webp",
+            "price": 10.99,
+            "description": "Totalitar bir cəmiyyətin distopik təsviri.",
+            "category": "Kitab",
+            "altCateg": [
+                "Qeyri-Bədii Ədəbiyyat"
+            ],
+            "altAltCateg": [
+                "Distopiya",
+                "Macəra"
+            ],
+            "lang": [
+                "Az",
+                "En"
+            ],
+            "stockCount": 5,
+            "soldCount": 2,
+            "view": 0
+        },
+        {
+            "id": 3,
+            "name": "Stoikin Gündəliyi",
+            "author": "Rayan Holidey",
+            "img": "https://www.libraff.az/images/thumbnails/400/600/from_1c/c41418cf-89da-11ee-a525-503eaa120fc7_1.jpg.webp",
+            "price": 9.99,
+            "description": "Necə xoşbəxt olmaq olar? Qəzəbimizi necə cilovlaya bilərik? Gerçək uğur nədir? Qismətimizin öhdəsindən gələ, həyatımızı mənalandıra bilərikmi? Bütün bu suallara stoasizm fəlsəfəsini mənimsəyərək cavab tapmaq olar. Əlinizdəki kitab antik müdrikliyə doğru irəlilədiyiniz zaman sizə bələdçilik edəcək. Bir çox mədəniyyət adamları, alimlər, aktivistlər, imperatorlar, döyüşçülər, müharibə qəhrəmanları yüz illər boyunca bu fəlsəfədən bəhrələniblər, ondan qaranlıqda çıraq, “döyüş”lərdə silah kimi istifadə ediblər. İndi növbə bizdədir. Stoisizm fəlsəfəsindən faydalanaraq həyatımızı asanlaşdıra, zehnimizi təmizləyə, daha güclü, daha mətin, daha səbatlı, daha müdrik, daha dinc bir insan ola, özümüzü tapa, tanıya bilərik. Üç yüz altmış altı gün... Bir il... Hər gün müxtəlif məsləhətlər, ibarələr, əhvalatlar... İmperator Mark Avreli, Seneka, Epiktet və başqa filosoflar sizinlə birgə addımlayacaq, sizə yoldaşlıq edəcək, çətin vəziyyətə düşdüyünüz, büdrədiyiniz, ümidinizi itirdiyiniz, yorulduğunuz zaman əlinizdən tutacaql",
+            "category": "Kitab",
+            "altCateg": [
+                "Qeyri-Bədii Ədəbiyyat"
+            ],
+            "altAltCateg": [
+                "Psixologiya",
+                "Şəxsi İnkişaf"
+            ],
+            "lang": [
+                "Az",
+                "En"
+            ],
+            "stockCount": 3,
+            "soldCount": 1,
+            "view": 12
+        },
+        {
+            "id": 4,
+            "name": "Masumiyet Müzesi",
+            "author": "Orhan Pamuk",
+            "img": "https://www.libraff.az/images/thumbnails/600/600/from_1c/5a5b8a4b-5052-11eb-a4d2-503eaa128442_1.jpg.webp",
+            "price": 11.99,
+            "description": "Amerikanın cənubunda ədalət və irqçilik mövzularını araşdıran bir roman.",
+            "category": "Kitab",
+            "altCateg": [
+                "Bədii Ədəbiyyat"
+            ],
+            "altAltCateg": [
+                "Romanlar & Novellalar",
+                "Romantika"
+            ],
+            "lang": [
+                "Az",
+                "En"
+            ],
+            "stockCount": 6,
+            "soldCount": 3,
+            "view": 0
+        },
+        {
+            "id": 5,
+            "name": "Brave New World",
+            "author": "Aldous Huxley",
+            "img": "https://m.media-amazon.com/images/I/91D4YvdC0dL.jpg",
+            "price": 10.49,
+            "description": "Gələcəkdə texnologiyanın və sosial mühəndisliyin təsiri ilə formalaşan bir cəmiyyətin təsviri.",
+            "category": "Kitab",
+            "altCateg": [
+                "Bədii Ədəbiyyat"
+            ],
+            "altAltCateg": [
+                "Romanlar & Novellalar",
+                "Distopiya"
+            ],
+            "lang": [
+                "Az",
+                "En"
+            ],
+            "stockCount": 4,
+            "soldCount": 2,
+            "view": 0
+        },
+        {
+            "id": 6,
+            "name": "Pride and Prejudice",
+            "author": "Jane Austen",
+            "img": "https://resizing.flixster.com/3J-F0XDYJFRviYtgfyS3VbDPEYQ=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2YxYzQ2MGJiLTgxMjgtNGIyYi1iYjVjLTQ5NTVkZGFkOGQyNi5qcGc=",
+            "price": 8.99,
+            "description": "İngilis aristokratiyasında sevgi və sosial siniflərin təsviri.",
+            "category": "Kitab",
+            "altCateg": [
+                "Bədii Ədəbiyyat"
+            ],
+            "altAltCateg": [
+                "Romanlar & Novellalar",
+                "Romantika"
+            ],
+            "lang": [
+                "Az",
+                "En"
+            ],
+            "stockCount": 5,
+            "soldCount": 1,
+            "view": 0
+        },
+        {
+            "id": 7,
+            "name": "The Catcher in the Rye",
+            "author": "J.D. Salinger",
+            "img": "https://m.media-amazon.com/images/I/8125BDk3l9L.jpg",
+            "price": 9.49,
+            "description": "Gənc bir oğlanın yetkinlik dövründə yaşadığı daxili mübarizələr.",
+            "category": "Kitab",
+            "altCateg": [
+                "Bədii Ədəbiyyat"
+            ],
+            "altAltCateg": [
+                "Romanlar & Novellalar",
+                "Macəra"
+            ],
+            "lang": [
+                "Az",
+                "En"
+            ],
+            "stockCount": 3,
+            "soldCount": 0,
+            "view": 0
+        },
+        {
+            "id": 8,
+            "name": "Moby-Dick",
+            "author": "Herman Melville",
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg6Sg_TEbTn14FDwL43rSfxwV4W9IhQV5ecQ&s",
+            "price": 12.49,
+            "description": "Kapitan Ahabın ağ balina ilə olan obsesiyası və dəniz macərası.",
+            "category": "Kitab",
+            "altCateg": [
+                "Bədii Ədəbiyyat"
+            ],
+            "altAltCateg": [
+                "Romanlar & Novellalar",
+                "Tarixi Roman"
+            ],
+            "lang": [
+                "Az",
+                "En"
+            ],
+            "stockCount": 2,
+            "soldCount": 1,
+            "view": 0
+        },
+        {
+            "id": 9,
+            "name": "Crime and Punishment",
+            "author": "Fyodor Dostoevsky",
+            "img": "https://m.media-amazon.com/images/I/71O2XIytdqL._AC_UF1000,1000_QL80_.jpg",
+            "price": 11.99,
+            "description": "Gənc bir tələbənin cinayət və vicdan əzabı ilə mübarizəsi.",
+            "category": "Kitab",
+            "altCateg": [
+                "Bədii Ədəbiyyat"
+            ],
+            "altAltCateg": [
+                "Romanlar & Novellalar",
+                "Distopiya"
+            ],
+            "lang": [
+                "Az",
+                "Ru"
+            ],
+            "stockCount": 4,
+            "soldCount": 2,
+            "view": 0
+        },
+        {
+            "id": 10,
+            "name": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "img": "https://www.perseusbooks.com/wp-content/uploads/2020/06/9780762498130-3.jpg",
+            "price": 10.99,
+            "description": "1920-ci illərin Amerikasında zənginlik və sevgi axtarışı.",
+            "category": "Kitab",
+            "altCateg": [
+                "Bədii Ədəbiyyat"
+            ],
+            "altAltCateg": [
+                "Romanlar & Novellalar",
+                "Klassik poemalar"
+            ],
+            "lang": [
+                "Az",
+                "En"
+            ],
+            "stockCount": 5,
+            "soldCount": 3,
+            "view": 0
+        },
+        {
+            "id": 11,
+            "name": "Səssiz Qız",
+            "author": "Tess Gerritsen",
+            "img": "https://static.insales-cdn.com/r/2GDy-pJBhQw/rs:fit:570:570:1/q:80/plain/images/products/1/374/171082102/3dbc8bb945df1ece49ea2ad4a95302e2.jpg@jpg",
+            "price": 10.90,
+            "description": "Psixoloq ilə susqun bir qadının sirli və gerilim dolu hekayəsi.",
+            "category": "Kitab",
+            "altCateg": [
+                "Bədii Ədəbiyyat"
+            ],
+            "altAltCateg": [
+                "Romanlar & Novellalar",
+                "Detektiv"
+            ],
+            "lang": [
+                "Az",
+                "En"
+            ],
+            "stockCount": 6,
+            "soldCount": 2,
+            "view": 0
+        },
+        {
+            "id": 12,
+            "name": "The Hobbit",
+            "author": "J.R.R",
+            "img": "https://m.media-amazon.com/images/I/91b0C2YNSrL.jpg",
+            "price": 9.50,
+            "description": "Öz xəzinəsini axtaran gənc çoban Santiago'nun mistik və fəlsəfi səyahəti.",
+            "category": "Kitab",
+            "altCateg": [
+                "Bədii Ədəbiyyat"
+            ],
+            "altAltCateg": [
+                "Romanlar & Novellalar",
+                "Klassik poemalar"
+            ],
+            "lang": [
+                "Az",
+                "Tr"
+            ],
+            "stockCount": 7,
+            "soldCount": 5,
+            "view": 0
+        },
+        {
+            "id": 13,
+            "name": "After You",
+            "author": "Jojo Bayes",
+            "img": "https://m.media-amazon.com/images/I/81UWB7oUZ0L.jpg",
+            "price": 13.99,
+            "description": "İnsan növünün keçmişindən gələcəyinə səyahət.",
+            "category": "Kitab",
+            "altCateg": [
+                "Bədii Ədəbiyyat"
+            ],
+            "altAltCateg": [
+                "Romanlar & Novellalar",
+                "Klassik poemalar"
+            ],
+            "lang": [
+                "Az",
+                "En"
+            ],
+            "stockCount": 5,
+            "soldCount": 3,
+            "view": 0
+        },
+        {
+            "id": 14,
+            "name": "Uğur Psixologiyası",
+            "author": "Carol S. Dweck",
+            "img": "https://m.media-amazon.com/images/I/71UwSHSZRnS.jpg",
+            "price": 11.50,
+            "description": "Düşüncə tərzinin həyatımıza təsiri və uğur üçün açar prinsiplər.",
+            "category": "Kitab",
+            "altCateg": [
+                "Qeyri-Bədii Ədəbiyyat"
+            ],
+            "altAltCateg": [
+                "Şəxsi İnkişaf",
+                "Psixologiya"
+            ],
+            "lang": [
+                "Az",
+                "En"
+            ],
+            "stockCount": 6,
+            "soldCount": 4,
+            "view": 0
+        },
+        {
+            "id": 15,
+            "name": "Atomik Vərdişlər",
+            "author": "James Clear",
+            "img": "https://m.media-amazon.com/images/I/91bYsX41DVL.jpg",
+            "price": 12.25,
+            "description": "Kiçik dəyişikliklərlə böyük nəticələr əldə etməyin yolları.",
+            "category": "Kitab",
+            "altCateg": [
+                "Qeyri-Bədii Ədəbiyyat"
+            ],
+            "altAltCateg": [
+                "Şəxsi İnkişaf",
+                "Psixologiya"
+            ],
+            "lang": [
+                "Az",
+                "En"
+            ],
+            "stockCount": 4,
+            "soldCount": 2,
+            "view": 23
+        },
+        {
+            "id": 16,
+            "name": "The only woman in room",
+            "author": "Marie Benedict",
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7lAu8bRk581xG3ssIWCzRuQiqg-ioDtJFqw&s",
+            "price": 9.99,
+            "description": "Elm dünyasında unudulmuş bir qadının gerçək və ilhamverici hekayəsi.",
+            "category": "Kitab",
+            "altCateg": [
+                "Qeyri-Bədii Ədəbiyyat"
+            ],
+            "altAltCateg": [
+                "Şəxsi İnkişaf",
+                "Psixologiya"
+            ],
+            "lang": [
+                "Az",
+                "En"
+            ],
+            "stockCount": 3,
+            "soldCount": 1,
+            "view": 0
+        },
+        {
+            "id": 17,
+            "name": "Malma İstasyonu",
+            "author": "Alex Schulman",
+            "img": "https://img.kitapyurdu.com/v1/getImage/fn:11863105/wh:true/wi:800",
+            "price": 8.80,
+            "description": "İngiltərənin aristokrat dövründə sevgi və sosial münasibətlər.",
+            "category": "Kitab",
+            "altCateg": [
+                "Qeyri-Bədii Ədəbiyyat"
+            ],
+            "altAltCateg": [
+                "Şəxsi İnkişaf",
+                "Psixologiya"
+            ],
+            "lang": [
+                "Az",
+                "Tr"
+            ],
+            "stockCount": 4,
+            "soldCount": 3,
+            "view": 25
+        },
+        {
+            "id": 18,
+            "name": "Kayıp Ağaçlar Adası",
+            "author": "Elif Şafak",
+            "img": "https://www.elifsafak.com.tr/t/?src=%2Ffiles%2Fkitap%2Fimg%2Fkayip-agaclar-adasi-on-kapak.jpg&w=320&h=455&zc=2",
+            "price": 10.75,
+            "description": "Doğunun ruhu ilə Qərbin ağlı arasında sıxışan bir qadının hekayəsi.",
+            "category": "Kitab",
+            "altCateg": [
+                "Qeyri-Bədii Ədəbiyyat"
+            ],
+            "altAltCateg": [
+                "Dini",
+                "Fəlsəfə"
+            ],
+            "lang": [
+                "Az",
+                "Tr"
+            ],
+            "stockCount": 6,
+            "soldCount": 2,
+            "view": 0
+        },
+        {
+            "id": 19,
+            "name": "Kimyaçı",
+            "author": "Stephenie Meyer",
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMnFUDZ9miHx8ZJvcBebcb6JaUQvxkbIyaNg&s",
+            "price": 9.80,
+            "description": "Keçmiş agentin həyatı üçün verdiyi ölüm-dirim mübarizəsi.",
+            "category": "Kitab",
+            "altCateg": [
+                "Bədii Ədəbiyyat"
+            ],
+            "altAltCateg": [
+                "Detektiv",
+                "Triller,mistika & Qorxu"
+            ],
+            "lang": [
+                "Az",
+                "En"
+            ],
+            "stockCount": 3,
+            "soldCount": 1,
+            "view": 0
+        },
+        {
+            "id": 20,
+            "name": "Küçük Prens",
+            "author": "Antoine de Saint-Exupéry",
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVc-uR9AYfLPgs_IU43OS8tucLVIkIrfrfxg&s",
+            "price": 7.50,
+            "description": "Sadə görünsə də, dərin fəlsəfəsi olan universal uşaq və böyük kitabı.",
+            "category": "Oyuncaq",
+            "altCateg": [
+                "Oyuncaq kitablar"
+            ],
+            "altAltCateg": [
+                "Səsli kitablar"
+            ],
+            "lang": [
+                "Az",
+                "Tr",
+                "Fr"
+            ],
+            "stockCount": 6,
+            "soldCount": 5,
+            "view": 0
+        },
+        {
+            "id": 21,
+            "name": "Kreutzer Sonat",
+            "author": "Lev Tolstoy",
+            "img": "https://static.insales-cdn.com/r/Ry5pErhTh6g/rs:fit:1140:1140:1/q:80/plain/images/products/1/4318/291311838/0000000451302-1.jpg@webp",
+            "price": 2.45,
+            "description": "Lev Nikolayeviç Tolstoy (1828-1910): Anna Karenina, Savaş ve Barış, Diriliş'in büyük yazarı, yaşamının son otuz yılında kendini insan, aile, din, devlet, toplum, özgürlük, boyun eğme, başkaldırma, sanat ve estetik konularında kuramsal çalışmalara da verdi. Bu dönemde yazdığı roman ve öykülerinde yıllarca üzerinde düşündüğü insanlık sorunlarını edebi bir kurguyla ele aldı. İlk olarak 1889'da yayınlanan Kreutzer Sonat, sansüre uğramasına rağmen çok büyük ilgi uyandırmış, tartışmalara sebep olmuştur. Tolstoy'un son derece sade, gerçekçi ve etkileyici anlatımının doruğa çıktığı eser, yaşamının son döneminde ortaya koyduğu yeni ahlak anlayışının da önemli örneklerinden biridir.",
+            "category": "Kitab",
+            "altCateg": [
+                "Bədii Ədəbiyyat"
+            ],
+            "altAltCateg": [
+                "Kino və teatr",
+                "Klassik poemalar",
+                "Klassiklər"
+            ],
+            "lang": [
+                "Tr"
+            ],
+            "stockCount": 6,
+            "soldCount": 23,
+            "view": 17
+        },
+        {
+            "id": 22,
+            "name": "The Laws Of Human Nature",
+            "author": "Antoine de Saint-Exupéry",
+            "img": "https://static.insales-cdn.com/r/O-YzP9eqjd4/rs:fit:1140:1140:1/q:80/plain/images/products/1/321/271114561/9781781259191.jpg@webp",
+            "price": 47.88,
+            "description": "WINNER OF THE INTERNATIONAL BUSINESS BOOK AWARD 2019 Robert Greene is a master guide for millions of readers, distilling ancient wisdom and philosophy into essential texts for seekers of power, understanding and mastery. Now he turns to the most important subject of all - understanding people's drives and motivations, even when they are unconscious of them themselves. We are social animals. Our very lives depend on our relationships with people. Knowing why people do what they do is the most important tool we can possess, without which our other talents can only take us so far. Drawing from the ideas and examples of Pericles, Queen Elizabeth I, Martin Luther King Jr, and many others, Greene teaches us how to detach ourselves from our own emotions and master self-control, how to develop the empathy that leads to insight, how to look behind people's masks, and how to resist conformity to develop your singular sense of purpose. Whether at work, in relationships, or in shaping the world around you, The Laws of Human Nature offers brilliant tactics for success, self-improvement, and self-defence.",
+            "category": "Kitab",
+            "altCateg": [
+                "Qeyri-Bədii Ədəbiyyat"
+            ],
+            "altAltCateg": [
+                "Psixologiya"
+            ],
+            "lang": [
+                "En"
+            ],
+            "stockCount": 98,
+            "soldCount": 67,
+            "view": 87
+        },
+        {
+            "id": 23,
+            "name": "Istanbul",
+            "author": "Orhan Pamuk",
+            "img": "https://static.insales-cdn.com/r/Ujc9fbljlFE/rs:fit:1140:1140:1/q:80/plain/images/products/1/4493/1012822413/81cXlfRMmHL._SL1500_.jpg@webp",
+            "price": 22.50,
+            "description": "A shimmering evocation, by turns intimate and panoramic, of one of the world's great cities, by its foremost writer. Orhan Pamuk was born in Istanbul and still lives in the family apartment building where his mother first held him in her arms. His portrait of his city is thus also a self-portrait, refracted by memory and the melancholy-or hüzün-that all Istanbullus share. With cinematic fluidity, Pamuk moves from his glamorous, unhappy parents to the gorgeous, decrepit mansions overlooking the Bosphorus; from the dawning of his self-consciousness to the writers and painters-both Turkish and foreign-who would shape his consciousness of his city. Like Joyce's Dublin and Borges' Buenos Aires, Pamuk's Istanbul is a triumphant encounter of place and sensibility, beautifully written and immensely moving.",
+            "category": "Kitab",
+            "altCateg": [
+                "Bədii Ədəbiyyat"
+            ],
+            "altAltCateg": [
+                "Triller,mistika & Qorxu",
+                "Klassik poemalar"
+            ],
+            "lang": [
+                "Az",
+                "Tr"
+            ],
+            "stockCount": 29,
+            "soldCount": 39,
+            "view": 45
+        }
+    ],
+    "comments": [],
+    "slides": [
+        "https://www.libraff.az/images/abt__ut2/banners/all/1312/C%CC%A7ingiz-Abdullayev---I%CC%87mza-saat%C4%B1-web-.webp",
+        "https://www.libraff.az/images/abt__ut2/banners/all/1305/martin-iden-desktop.webp",
+        "https://www.libraff.az/images/abt__ut2/banners/all/1305/Hero-banner-desktop-20_-discount.webp",
+        "https://www.libraff.az/images/abt__ut2/banners/all/1310/01-web-3840x1000.webp"
+    ],
+    "mobileSlides": [
+        "https://www.libraff.az/images/abt__ut2/banners/mobile/1305/Hero-banner-mobile-20_-discount-v2.webp",
+        "https://www.libraff.az/images/abt__ut2/banners/mobile/1310/1-endirim-mobil-1400x1000_ii8m-sl.webp",
+        "https://www.libraff.az/images/abt__ut2/banners/mobile/1310/1-endirim-mobil-1400x1000_ii8m-sl.webp"
+    ],
+    "campanies": [
+        {
+            "countdown": "Bitməsinə 18 gün qaldı",
+            "discount": "Seçilmiş məhsullara 40% Endirim (01-31 May)",
+            "period": "dan 01-05-2025 a 01-06-2025",
+            "img": "https://www.libraff.az/images/thumbnails/330/200/promotion/1310/40_AZE.webp.webp"
+        },
+        {
+            "countdown": "Bitməsinə 18 gün qaldı",
+            "discount": "Seçilmiş məhsullara 70% ENDİRİM (1-31 MAY)",
+            "period": "dan 01-05-2025 a 01-06-2025",
+            "img": "https://www.libraff.az/images/thumbnails/330/200/promotion/1310/70-AZE_gkax-5d.webp.webp"
+        },
+        {
+            "countdown": "Bitməsinə 18 gün qaldı",
+            "discount": "Seçilmiş məhsullara 80% Endirim (01-31 May)",
+            "period": "dan 01-05-2025 a 01-06-2025",
+            "img": "https://www.libraff.az/images/thumbnails/330/200/promotion/1310/80_AZE.webp.webp"
+        },
+        {
+            "countdown": "Bitməsinə 18 gün qaldı",
+            "discount": "Seçilmiş məhsullara 50% Endirim (01-31 May)",
+            "period": "dan 01-05-2025 a 01-06-2025",
+            "img": "https://www.libraff.az/images/thumbnails/330/200/promotion/1310/50-AZE.webp.webp"
+        }
+    ],
+    "categories": [
+        {
+            "category": "Kitab",
+            "subCategory": [
+                {
+                    "name": "Bədii ədəbiyyat",
+                    "subSubCategory": [
+                        "Antologiya",
+                        "Bioqrafiya, avtobioqrafiya & Xatirə",
+                        "Detektiv",
+                        "Romantika",
+                        "Elmi-fantastika & Fantaziya",
+                        "Fəlsəfə",
+                        "Hekayələr & Oçerklər",
+                        "Kino və teatr",
+                        "Klassik poemalar",
+                        "Klassiklər",
+                        "Komiks",
+                        "Macəra",
+                        "Mifologiya",
+                        "Nağıllar",
+                        "Poemalar",
+                        "Romanlar & Novellalar",
+                        "Tarixi roman",
+                        "Distopiya",
+                        "Triller, mistika & Qorxu"
+                    ]
+                },
+                {
+                    "name": "Qeyri-bədii ədəbiyyat",
+                    "subSubCategory": [
+                        "Şəxsi İnkişaf",
+                        "Distopiya",
+                        "Təhsil, mənbə & Dil",
+                        "Bədii uşaq ədəbiyyatı",
+                        "Qeyri-bədii uşaq ədəbiyyatı",
+                        "3D Kitab",
+                        "Ailə",
+                        "Aşpazlıq",
+                        "Astronomiya",
+                        "Bioqrafiya, avtobioqrafiya & Xatirə",
+                        "Biznes & İqtisadiyyat",
+                        "Dini",
+                        "Dəb",
+                        "Elm",
+                        "Ensiklopediyalar & Atlaslar",
+                        "Fəaliyyətlər",
+                        "Fəlsəfə",
+                        "Heyvanlar",
+                        "Jurnallar & Qəzetlər",
+                        "Kino və teatr",
+                        "Komiks",
+                        "Musiqi",
+                        "Oyuncaq kitablar",
+                        "Psixologiya",
+                        "Qeyri-bədii",
+                        "Sağlamlıq, tibbi & İdman",
+                        "Sitatlar & Aforizmlər"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Oyuncaq",
+            "subCategory": [
+                {
+                    "name": "Uşaq oyuncaqları",
+                    "subSubCategory": [
+                        "Təhsil oyuncaqları",
+                        "Əyləncəli oyuncaqlar",
+                        "Qız və oğlan üçün fərqli oyuncaq dəstləri"
+                    ]
+                },
+                {
+                    "name": "Oyuncaq kitablar",
+                    "subSubCategory": [
+                        "Səsli kitablar",
+                        "3D formatlı kitablar",
+                        "Sensorlu interaktiv kitablar"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Oyunlar və dəftərxana",
+            "subCategory": [
+                {
+                    "name": "Oyunlar",
+                    "subSubCategory": [
+                        "Zəkalı oyunlar",
+                        "Masaüstü oyunlar",
+                        "Puzzle və bloklar"
+                    ]
+                },
+                {
+                    "name": "Dəftərxana ləvazimatları",
+                    "subSubCategory": [
+                        "Qələmlər və markerlər",
+                        "Dəftərlər və planlayıcılar",
+                        "Rəsm alətləri",
+                        "Kəsici və yapışdırıcı vasitələr"
+                    ]
+                }
+            ]
+        }
+    ]
+}

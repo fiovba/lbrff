@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tiny.cloud/1/2ho7ss56y7cfgd8vrzrjx6pya64w02vtv6eokqvz0e0sbape/tinymce/7/tinymce.min.js"
+        referrerpolicy="origin"></script>
+    <title>Libraff Admin</title>
+</head>
+
+<body class="bg-red-900 p-5">
+
+    <div id="bookModal" class="z-55 hidden flex fixed inset-0 bg-red-800 bg-opacity-90 justify-center items-center">
+        <div class="bg-white p-6 rounded-md w-[60%]">
+            <h2 class="text-xl font-semibold mb-4">Yeni Kitab Əlavə Et</h2>
+            <input type="text" id="nameInput" placeholder="Kitab Adı" class="border p-2 w-full mb-2">
+            <input type="text" id="authorInput" placeholder="Müəllif" class="border p-2 w-full mb-2">
+            <input type="text" id="imgInput" placeholder="Şəkil URL" class="border p-2 w-full mb-2">
+            <input type="number" id="priceInput" placeholder="Qiymət" step="0.01" class="border p-2 w-full mb-2">
+            <textarea id="descriptionInput" placeholder="Təsvir" class="border p-2 w-full mb-2"></textarea>
+
+            <!-- Selects for Category -->
+            <input type="text" id="categoryInput" placeholder="Əsas Kateqoriya" class="border p-2 w-full mb-2">
+            <input type="text" id="altCategInput" placeholder="Alt Kateqoriya (vergüllə ayır)"
+                class="border p-2 w-full mb-2">
+            <input type="text" id="altAltCategInput" placeholder="Alt-Alt Kateqoriya (vergüllə ayır)"
+                class="border p-2 w-full mb-2">
+            <input type="text" id="langInput" placeholder="Dillər (Az, Ru, En...) vergüllə ayır"
+                class="border p-2 w-full mb-2">
+
+            <input type="number" id="stockCountInput" placeholder="Stok Sayı" class="border p-2 w-full mb-2">
+
+            <button id="savebook" onclick="saveBook()" class="bg-red-500 text-white px-4 py-2 rounded mr-2">Yadda
+                saxla</button>
+            <button onclick="closeModule('bookModal')" class="bg-gray-400 text-white px-4 py-2 rounded">Bağla</button>
+        </div>
+    </div>
+
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+        <button onclick="openModule()" class="bg-white rounded-2xl border-1 border-red-950 p-[10px_40px]">ADD</button>
+        <table class="mt-4 w-full text-sm text-left rtl:text-right text-white">
+            <thead class="text-xs  uppercase bg-gray-400 text-red-700">
+                <tr>
+                    <th scope="col" class="px-6 py-3">
+                        Book Name
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Author
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Description
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        İmage
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Price
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Action
+                    </th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="admin.js" type="module">
+    </script>
+</body>
+
+</html>

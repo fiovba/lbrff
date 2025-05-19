@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.libraff.az/images/logos/1305/icon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>Libraff - Onlayn Kitab Mağazası</title>
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col min-h-screen">
+    <header class="relative">
+        <div id="mobileHeader" class="flex flex-col lg:hidden">
+            <div class="flex justify-between pb-2">
+                <div class="flex gap-3 items-center">
+                    <div id="barIcon">
+                        <i class="fa-solid fa-bars text-2xl p-2"></i>
+                    </div>
+                    <div id="LogoDiv" class="w-32 sm:w-40 md:w-48 lg:w-56 xl:w-64">
+                        <a href="index.htm">
+                            <img src="logo_b1x3-5c.png" alt="Logo" class="w-full h-auto">
+                        </a>
+                    </div>
+
+                </div>
+                <div class="flex items-center p-2 gap-3 text-2xl">
+                    <span><i class="fa-solid fa-user"></i></span>
+                    <span id="cartIcon2"><i class="fa-solid fa-basket-shopping"></i></span>
+                </div>
+            </div>
+            <div class="flex w-[90%] mx-auto bg-[#f8fafc] border-[1px] border-gray-300 rounded-2xl p-2 justify-between">
+                <div class="w-[95%]"><input onclick="handleSearch()" class="w-full" type="search"
+                        placeholder="Növbəti Kitabınızı Axtarın.">
+                </div>
+                <div class="w-[5%]"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+        </div>
+        <div id="sidebarMobile"
+            class="fixed top-0 left-0 w-full h-full bg-white z-50 transform -translate-x-full transition-transform duration-300 overflow-y-auto">
+            <div class="flex justify-end p-4">
+                <button id="closeSidebar" class="text-2xl">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="p-4 space-y-4">
+                <div class="border-b border-[#878b94]">
+                    <button class="w-full text-[#878b94] flex justify-between items-center text-left py-2 font-semibold"
+                        onclick="toggleAccordion('mainLinks')">
+                        Əsas keçidlər
+                        <span id="icon-mainLinks">−</span>
+                    </button>
+                    <div id="mainLinks" class="pl-4 space-y-2 hidden ">
+                        <a href="bestsellerler.htm" class="block">Bestseller</a>
+                        <a href="endirimler.htm" class="block">Endirimlər</a>
+                        <a href="muellifler.htm" class="block">Müəlliflər</a>
+                        <a href="klassikler.htm" class="block">Klassiklər</a>
+                    </div>
+                </div>
+
+                <!-- Digər -->
+                <div class="border-b border-[#878b94]">
+                    <button class="w-full flex justify-between text-[#878b94] items-center text-left py-2 font-semibold"
+                        onclick="toggleAccordion('otherLinks')">
+                        Digər
+                        <span id="icon-otherLinks">+</span>
+                    </button>
+                    <div id="otherLinks" class="pl-4   space-y-2 hidden">
+                        <a href="#" class="block">Haqqımızda</a>
+                        <a href="#" class="block">Əlaqə</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="desktopHeader" class="hidden lg:flex flex-col w-full shadow-sm bg-white z-30">
+            <!-- Top Row -->
+            <div class="flex justify-between items-center px-6 py-4">
+                <!-- Logo -->
+                <div class="flex items-center gap-4">
+                    <a href="index.htm" class="w-36">
+                        <img src="logo_b1x3-5c.png" alt="Libraff Logo" class="w-full">
+                    </a>
+                    <!-- Kataloq Button -->
+                    <button id="catalogBtn" onclick="handlePopup(true)"
+                        class="bg-red-600 hover:bg-red-700 relative z-50 text-white px-4 py-2 rounded-full flex items-center gap-2">
+                        <i class="fa-solid fa-table-cells"></i>
+                        <span>Kataloq</span>
+                    </button>
+
+                </div>
+
+                <!-- Search Bar -->
+                <div class="flex-grow max-w-2xl mx-6 ">
+                    <div class="flex items-center bg-[#f5f8fa] border border-blue-200 rounded-full px-4 py-2">
+                        <input id="searchInput" onclick="handleSearch()" type="text"
+                            placeholder="Növbəti kitabınızı axtarın"
+                            class="bg-transparent w-full outline-none text-sm" />
+                        <i onclick="handleSearch()" class="fa-solid fa-magnifying-glass text-gray-700"></i>
+                    </div>
+                </div>
+
+                <!-- Right Icons -->
+                <div class="flex items-center gap-6">
+                    <!-- Language -->
+                    <div class="text-sm text-gray-700">AZ <i class="fa-solid fa-chevron-down text-xs ml-1"></i></div>
+
+                    <!-- Hesabım -->
+                    <button
+                        class="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-sm font-medium hover:bg-gray-200">
+                        <i class="fa-regular fa-user"></i>
+                        Hesabım
+                        <i class="fa-solid fa-chevron-down text-xs"></i>
+                    </button>
+
+                    <!-- Favorites Icon -->
+                    <i id="favoritesIcon" class="fa-regular fa-heart text-xl cursor-pointer"></i>
+
+                    <!-- Cart Icon -->
+                    <i id="cartIcon" class="fa-solid fa-basket-shopping text-xl cursor-pointer relative">
+                        <span id="cartCount"
+                            class="absolute -top-2 -right-2 bg-red-600 text-white text-xs px-1 rounded-full"></span>
+                    </i>
+
+
+                </div>
+            </div>
+
+            <!-- Alt Naviqasiya -->
+
+            <div class="flex justify-between">
+                <div class="flex gap-8 text-sm text-gray-700 p-5">
+                    <a href="bestsellerler.htm" class="hover:text-red-600">Bestseller</a>
+                    <a href="endirimler.htm" class="hover:text-red-600">Endirimlər</a>
+                    <a href="muellifler.htm" class="hover:text-red-600">Müəlliflər</a>
+                    <a href="klassikler.htm" class="hover:text-red-600">Klassiklər</a>
+
+                </div>
+                <div class="flex gap-8 text-sm text-gray-700 p-5">
+                    <a href="#" class="hover:text-red-600">Ödəniş və çatdırılma</a>
+                    <a href="#" class="hover:text-red-600">Loyallıq Kartı</a>
+                    <a href="#" class="hover:text-red-600">FAQ</a>
+                    <a href="#" class="hover:text-red-600">Əlaqə</a>
+
+                </div>
+            </div>
+            <!-- Favorites Popup -->
+            <div id="favoritesPopup" class="fixed  w-full h-full bg-black/50 hidden z-50 flex ">
+                <div class="bg-white top-[10%] left-[60%] p-6 rounded-lg w-96 max-h-[60vh] overflow-y-auto relative">
+                    <button onclick="togglePopup('favoritesPopup')"
+                        class="absolute top-2 right-2 text-gray-600 hover:text-gray-900">&times;</button>
+                    <h2 class="text-xl font-semibold mb-4">Seçilmişlər</h2>
+                    <div id="favoritesContent">Favorit kitablar burada görünəcək</div>
+                </div>
+            </div>
+
+            <!-- Cart Popup -->
+            <div id="cartPopup" class="fixed  w-full h-full bg-black/50 hidden z-50 flex justify-center items-center">
+                <div class="bg-white top-[-10%] left-[30%] p-6 rounded-lg w-96 relative">
+                    <button onclick="togglePopup('cartPopup')"
+                        class="absolute top-2 right-2 text-gray-600 hover:text-gray-900">&times;</button>
+                    <h2 class="text-xl font-semibold mb-4">Səbət</h2>
+                    <div id="cartContent" class="max-h-[50vh] overflow-y-auto "></div><div id="cartBooks"></div>
+                    <button onclick="window.location.href='cart.htm'"  class="rounded-xl text-white bg-red-400 p-2">Etrafli Bax</button>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main class="flex-1">
+        <div id="slider" class="h-[80vh] ">
+            <div class="swiper mySwiper h-full relative z-10">
+                <div class="swiper-wrapper h-full">
+
+                </div>
+            </div>
+        </div>
+        <div id="topDiv" class="flex flex-col p-7 justify-center">
+            <div id="ayBasliq1" class="text-3xl  mb-4 text-gray-900"></div>
+            <div id="topSold" class="flex gap-5 overflow-y-auto"></div>
+        </div>
+        <div id="topDiv2" class="flex flex-col p-7 justify-center">
+            <div id="ayBasliq" class="text-3xl mb-4 text-gray-900"></div>
+            <div id="topView" class="flex gap-5 overflow-y-auto"></div>
+        </div>
+        <h1 class="text-3xl text-gray-900 p-4">Bütün Kitablar</h1>
+        <div id="staticCards" class="flex p-4 relative z-10 flex-wrap w-full gap-5 ">
+
+        </div>
+        <div id="outset" class="fixed hidden bg-black/50 w-full inset-0 z-40 ">
+            <div id="popup"
+                class="w-[90vw] h-[80vh] rounded-2xl flex relative top-[50%] left-[50%] translate-[-50%] bg-white">
+                <ul id="categ" class="w-[25%] h-full flex flex-col "></ul>
+                <ul id="subcateg" class="w-[25%] h-full flex flex-col  bg-[#f3f3f7]"></ul>
+                <ul id="subsubcateg" class="w-[50%] h-full flex flex-col overflow-x-auto"></ul>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-gray-50 text-gray-800 px-8 py-10">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-sm">
+            <!-- Hesabım -->
+            <div>
+                <h2 class="font-semibold text-lg mb-3">Hesabım</h2>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:underline">Daxil ol</a></li>
+                    <li><a href="#" class="hover:underline">Qeydiyyatdan keç</a></li>
+                </ul>
+            </div>
+
+            <!-- Şirkət -->
+            <div>
+                <h2 class="font-semibold text-lg mb-3">Şirkət</h2>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:underline">Haqqımızda</a></li>
+                    <li><a href="#" class="hover:underline">Əlaqə</a></li>
+                    <li><a href="#" class="hover:underline">Vakansiyalar</a></li>
+                    <li><a href="#" class="hover:underline">Sayt Xəritəsi</a></li>
+                </ul>
+            </div>
+
+            <!-- Müştəri Xidməti -->
+            <div>
+                <h2 class="font-semibold text-lg mb-3">Müştəri Xidməti</h2>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:underline">Dəyişdirilmə və qaytarılma</a></li>
+                    <li><a href="#" class="hover:underline">Ödəniş və çatdırılma</a></li>
+                    <li><a href="#" class="hover:underline">Sifarişiniz haqqında</a></li>
+                    <li><a href="#" class="hover:underline">Seçilmişlər</a></li>
+                </ul>
+            </div>
+
+            <!-- Əlaqə -->
+            <div>
+                <h2 class="font-semibold text-lg mb-3">Əlaqə</h2>
+                <p>Bakı, Badamdar qəs., Mikayıl Müşfiq küç. 1c<br>(Badamdar Estates)</p>
+                <p class="mt-2">+994-50-290-44-96</p>
+                <p>B.e.-B. 9.00 - 18.00</p>
+                <a href="mailto:online@libraff.az" class="text-blue-500 hover:underline">online@libraff.az</a><br>
+                <a href="#" class="text-blue-500 hover:underline">Xəritədə bax</a>
+            </div>
+        </div>
+
+        <div class="text-center text-xs text-gray-500 mt-10">
+            © 2017 - 2025 Libraff.
+        </div>
+    </footer>
+    <div x-data="{ open: false }" class="fixed bottom-6 right-6 z-50" x-cloak>
+        <!-- Toggle Button -->
+        <button @click="open = !open"
+            class="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg focus:outline-none relative">
+            💬
+        </button>
+
+        <!-- Dropdown menyu -->
+        <div x-show="open" x-transition
+            class="absolute bottom-16 right-0 bg-white border border-gray-200 shadow-md rounded-lg w-48">
+            <a href="https://wa.me/994502904496" target="_blank" class="block px-4 py-2 hover:bg-gray-100 text-sm">
+                WhatsApp ilə yaz
+            </a>
+            <a href="mailto:online@libraff.az" class="block px-4 py-2 hover:bg-gray-100 text-sm">
+                Email göndər
+            </a>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
+
+    <script type="module" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</body>
+
+</html>
