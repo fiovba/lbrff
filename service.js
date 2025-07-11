@@ -1,6 +1,6 @@
 async function getData(category){
     try{
-        const res = await fetch(`https://libraff-data-1-6b9l.onrender.com/${category}`);
+        const res = await fetch(`libraff-data-production.up.railway.app/${category}`);
         if(!res.ok) throw new Error(res.status);
         return await res.json();
     }
@@ -10,7 +10,7 @@ async function getData(category){
 }
 
 async function addComment(newComments){
-    const res = await fetch(`https://libraff-data-1-6b9l.onrender.com/comments`, {
+    const res = await fetch(`libraff-data-production.up.railway.app/comments`, {
         method:"POST", 
         headers:{'Content-Type':'application/json'}, 
         body:JSON.stringify(newComments)
@@ -21,7 +21,7 @@ async function addComment(newComments){
 async function updateViewCount(book) {
     try {
         book.view = book.view + 1;
-        const response = await fetch(`https://libraff-data-1-6b9l.onrender.com/kitablar/${book.id}`, {
+        const response = await fetch(`libraff-data-production.up.railway.app/kitablar/${book.id}`, {
             method: 'PUT',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(book)
@@ -34,7 +34,7 @@ async function updateViewCount(book) {
 
 async function addBook(newItem) {
     try {
-        const res = await fetch(`https://libraff-data-1-6b9l.onrender.com/kitablar`, {
+        const res = await fetch(`libraff-data-production.up.railway.app/kitablar`, {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(newItem)
@@ -48,7 +48,7 @@ async function addBook(newItem) {
 
 async function updateBook(id, updatedFields) {
     try {
-        const res = await fetch(`https://libraff-data-1-6b9l.onrender.com/kitablar/${id}`, {
+        const res = await fetch(`libraff-data-production.up.railway.app/kitablar/${id}`, {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(updatedFields)
@@ -64,7 +64,7 @@ async function updateBook(id, updatedFields) {
 
 async function deleteBookByID(id) {
     try {
-        const res = await fetch(`https://libraff-data-1-6b9l.onrender.com/kitablar/${id}`, {
+        const res = await fetch(`libraff-data-production.up.railway.app/kitablar/${id}`, {
             method: 'DELETE'
         });
         if (!res.ok) throw new Error(res.status);
